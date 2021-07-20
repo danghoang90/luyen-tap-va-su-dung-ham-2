@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = ["q" , "w", "d", "r", "t","m" ,"l","t", "t", "y","u","u","c","v"];
+    let word = prompt("Nhập ký tự bất kỳ");
+    function checkWord(){
+        let count = 0;
+        let flag = false;
+        for (let i=0 ; i< str.length; i++){
+            if ( word === str[i]){
+                count += 1;
+                flag = true;
+            }
+        }
+
+        if (flag == false) {
+            return alert(-1);
+        }
+        alert(count);
+    }
+    checkWord();
+</script>
+</body>
+</html>
